@@ -8,7 +8,7 @@ class stack:
     def push(self, val):
         self.data.append(val)
     def pop(self):
-        if not self.isEmpty:
+        if not self.isEmpty():
             s=self.data[len(self.data)-1]
             del self.data[len(self.data)-1]
             return s
@@ -28,7 +28,7 @@ class queue:
     def enqueue(self, val):
         self.data.append(val)
     def dequeue(self):
-        if not self.isEmpty:
+        if not self.isEmpty():
             s=self.data[0]
             del self.data[0]
             return s
